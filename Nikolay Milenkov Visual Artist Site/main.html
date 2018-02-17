@@ -1,0 +1,734 @@
+<html>
+ 
+    <head>
+		
+        <title> Nikolay Milenkov Visual Artist </title>
+        <script src="https://viewer.marmoset.co/main/marmoset.js"></script>
+        <style>
+		
+			/* Navigational Bar */
+			
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #AB987A;
+                position: fixed;
+                font-family: Cambria;
+                font-size: 1.2em;
+            }
+ 
+            li {
+                float: left;
+            }
+ 
+            li a {
+                display: block;
+                color: #F5F5F5;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+ 
+            li a:hover:not(.active) {
+                background-color: #0F1626;
+            }
+ 
+            .active {
+                background-color: #FF533D;
+            }
+ 
+			/* CV like intro */
+ 
+            body {
+                font-size: 100%;
+                background-color: #0F1626;
+            }
+ 
+            div.CVbackground {               
+                margin: auto;
+                padding-top: 5%;
+                padding-bottom: 10%;
+                padding-left: 28%;
+                padding-right: 28%;
+            }
+ 
+            div.CVcontent {
+                text-align: center;
+                background-color: #F5F5F5;
+                padding: 5%;
+                border-radius: 50px;
+            }
+ 
+            p.CVintro {
+                font-family: Ariel;
+                font-weight: bold;
+                font-size: 1.5em;
+                color: #0F1626;
+            }
+ 
+            p.CVtext {
+                font-family: Cambria;
+                font-style: normal;
+                font-size: 1.0em;
+                color: #0F1626;
+				text-align: justify;
+            }
+ 
+            td.CVtable {
+                font-family: Cambria;
+                font-style: normal;
+                font-size: 1.0em;
+                padding: 5px;
+            }
+ 
+            img.icons {
+                width: 25px;
+                height: 25px;
+            }
+			
+			a.CVREF:link {
+                color: #FF533D;
+                background-color: transparent;
+                text-decoration: none;
+            }
+ 
+            a.CVREF:visited {
+                color: #FF533D;
+                background-color: transparent;
+                text-decoration: none;
+            }
+ 
+            a.CVREF:hover {
+                color: #0F1626;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+ 
+            a.CVREF:active {
+                color: #FF533D;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+			
+			/* Video */
+ 
+            div.video {
+                margin: auto;
+                padding-top: 5%;
+                padding-bottom: 10%;
+                padding-left: auto;
+                padding-right: auto;
+                background-color: #FF533D;
+                text-align: center;
+                font-size: 2.0em;
+                font-family: Cambria;
+            }
+			
+			/* Portfolio */
+ 
+            div.portfolioAll {}
+ 
+            div.PorfolioMenu {}
+ 
+            div.ProjectName {
+                background-color: #FF533D;
+                text-align: center;
+                width: 12%;
+				height: 3%;
+                font-family: Segoe UI Black;
+                font-size: 1.0em;
+                color: #F5F5F5;
+                padding: 5%;
+                margin: 10px;
+                float: left;
+                border-radius: 10px;
+            }
+ 
+            div.ProjectContent {}
+ 
+            div.PortfolioContent {
+                background-color: #F5F5F5;
+                border-radius: 25px;
+                margin-top: 1%;
+                margin-bottom: 5%;
+                margin-left: 10%;
+                margin-right: 10%;
+                padding-top: 5%;
+                padding-bottom: 10%;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+ 
+            p.pTitle {
+                font-family: Segoe UI Black;
+                color: #FF533D;
+                font-size: 2.0em;
+                text-align: center;
+            }
+ 
+            p.pText {
+                font-family: Cambria;
+                color: #0F1626;
+                font-size: 1.2em;
+            }
+ 
+            p.madewith {
+                font-family: Segoe UI Black;
+                color: #FF533D;
+                font-size: 1.0em;
+                text-align: left;
+            }
+ 
+            img.icons3 {
+                width: 60px;
+                height: auto;
+                display: block;
+            }
+ 
+            div.galleryicon {
+                margin: 20px;
+                float: left;
+            }
+ 
+            div.gallery {
+                margin: 5px;
+                border: 1px solid #ccc;
+                float: left;
+                width: 30%;
+				height: auto;
+            }
+ 
+            div.gallery:hover {
+                border: 1px solid #FF533D;
+            }
+ 
+            div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+ 
+            div.desc {
+                color: #0F1626;
+                font-family: Cambria;
+                padding: 15px;
+                text-align: center;
+            }
+ 
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+			
+			/* Contacts */
+ 
+            div.Contacts {
+                background-color: #FF533D;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-origin: border-box;
+                margin: auto;
+                padding-top: 5%;
+                padding-bottom: 10%;
+                padding-left: 28%;
+                padding-right: 28%;
+            }
+ 
+            div.ContactInfo {
+                background-color: #AB987A;
+                padding: 5%;
+                border-radius: 50px;
+            }
+ 
+            img.icons2 {
+                width: 40px;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+ 
+            p.contacts {
+                text-align: center;
+                font-family: Cambria;
+                font-size: 1.2em;
+            }
+ 
+            a.social:link {
+                color: #0F1626;
+                background-color: transparent;
+                text-decoration: none;
+            }
+ 
+            a.social:visited {
+                color: #0F1626;
+                background-color: transparent;
+                text-decoration: none;
+            }
+ 
+            a.social:hover {
+                color: #FF533D;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+ 
+            a.social:active {
+                color: #F5F5F5;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+				
+        </style>
+    </head>
+ 
+    <body>
+        <!-- colors:
+            Navy Blue: #0F1626
+            Leather: #AB987A
+            Coral: #FF533D
+            Eggshell: #F5F5F5 -->
+			
+        <!-- Navigational Bar -->
+        <ul>
+            <li>
+                <a class="active" href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#video">Video</a>
+            </li>
+            <li>
+                <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+                <a href="#contacts">Contacts</a>
+            </li>
+        </ul>
+        <!-- CV like introduction -->
+        <a name="home"></a>
+        <div class="CVbackground">
+            <div class="CVcontent">
+                <p><font style="font-family: Segoe UI Black; font-size: 2.5em; color: #FF533D;">
+                    <i> Nikolay Milenkov </i>
+                </font></p>
+                
+                <font style="font-family: Ariel; font-size: 1.8em; color: #0F1626;">
+                    <b> Visual Artist </b>
+                </font>
+                <p class="CVintro">
+                    <img class="icons" src="IMG/Icons/user.png"> About me: </p>
+                <p class="CVtext"> Outgoing, positive and adaptive are some of the best words 
+                    that can describe me. I take every task seriously 
+                    and work hard to achieve it with the best possible results. 
+                    Very balanced, calm and patient, 
+                    communicating with people is joy for me 
+                    and I can confidently say that I have no trouble 
+                    socializing and building comfort. 
+                    I am energetic and motivated, 
+                    always learning or/and working on new things. 
+                <p class="CVintro">
+                    <img class="icons" src="IMG/Icons/pencil.png"> Skills: </p>
+                <p class="CVtext"> Experimenting with a variety of digital craft methods and tools has enriched my knowledge to a high degree. 
+				Of course, I continue to learn and I stay aware of new technologies that may appear more effective 
+				and which would enable me to accomplish work on a whole new level. </p>
+				<p class="CVtext"> I have experience with photo and video editing, as well as digital sketching. At the same time, I consider myself 
+				competent regarding 3D modelling and sculpting, familiar with both hard surface and organic modeling workflows. 
+				Moreover, I can also work on the textures of my models. Rigging and animating are another processes that I have practice, 
+				although there is still a lot of room for improvement. My goal for the future is to continue 
+				improving my skills and further excel in the world of visual arts!
+				</p>
+                <p class="CVintro">
+                    <img class="icons" src="IMG/Icons/education.png"> Education: </p>
+                <table border="1" cellspacing="0" align="center">
+                    <tr>
+                        <td class="CVtable">2013-2018:</td>
+                        <td class="CVtable"> 91. Deutschsprachiges Gymnasium 'Prof. Dr. Konstantin Galabov' </td>
+                    </tr>
+                    <tr>
+                        <td class="CVtable">2010-2013:</td>
+                        <td class="CVtable"> First Private Mathematical Gymnasium </td>
+                    </tr>
+                </table>
+				</br>
+				<p style="font-family: Ariel; font-size: 1.2em;"><a class="CVREF" target="_blank" href="IMG/CV.pdf"><b> Check out my CV to learn more! </b></a></p>
+            </div>
+        </div>
+        <!-- Video Intro -->
+        <a name="video"></a>
+        <div class="video" align="center">
+            <p style="font-family: Segoe UI Black; color: #F5F5F5; font-size: 1.2em;">
+                <i> Video Introduction </i>
+            </p>
+            <iframe width="700" height="460" src="https://www.youtube.com/embed/QlmYBp3yshc?rel=0" 
+			frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <!-- Portfolio -->
+        <a name="portfolio"></a>
+        <div class="portfolioAll">
+            <p style="text-align:center; font-family: Segoe UI Black; font-size: 2.5em; color: #F5F5F5;">
+                <i> Portfolio </i>
+            </p>
+            <p style="text-align:center; font-family: Cambria; font-size: 1.5em; color: #F5F5F5;"> Click on the pictures to see them in full view! </p>
+            <div class="PorfolioMenu">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Helmet');" id="myLink">
+                    <div class="ProjectName tablink"> Stormtrooper Helmet </div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Knight');">
+                    <div class="ProjectName tablink"> Cartoonish Knight </div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Wing');">
+                    <div class="ProjectName tablink"> X-Wing </div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Shield');">
+                    <div class="ProjectName tablink"> Shield Maiden </div>
+                </a>
+            </div>
+ 
+            <div class="clearfix"></div>
+ 
+            <div class="PortfolioContent">
+                <div id="Helmet" class="ProjectContent menu">
+                    <p class="pTitle"> Stormtrooper Helmet </p>
+					<p class="pText"> This project is to demonstrate that I know how to create a smooth and practical hard surface model and, 
+						also, that I can design with UVs and textures. </p>
+                    <p class="pText"> I worked with a number of references and as a result, I managed to build a good general shape, 
+						with colors and additional details which were my artistic choice. </p>
+                    <p class="pText"> It was satisfying for me to accomplish this particular task. My approach was to use practical knowledge, 
+						gained from previous projects and to upgrade it, in order to produce this impressive model. </p>
+ 
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/Helmet/Base1.jpg">
+                            <img src="IMG/Helmet/Base1A.jpg">
+                        </a>
+                        <div class="desc">Front View</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/Helmet/Base2.jpg">
+                            <img src="IMG/Helmet/Base2A.jpg">
+                        </a>
+                        <div class="desc">Trying some other light</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/Helmet/Base3.jpg">
+                            <img src="IMG/Helmet/Base3A.jpg">
+                        </a>
+                        <div class="desc">Darker light</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/Helmet/FromBottom.jpg">
+                            <img src="IMG/Helmet/FromBottomA.jpg">
+                        </a>
+                        <div class="desc">From the Bottom</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/Helmet/SideLeft.jpg">
+                            <img src="IMG/Helmet/SideLeftA.jpg">
+                        </a>
+                        <div class="desc">Side View</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/Helmet/SideRight.jpg">
+                            <img src="IMG/Helmet/SideRightA.jpg">
+                        </a>
+                        <div class="desc">Side View 2</div>
+                    </div>
+ 
+                    <div class="clearfix"></div>
+                   
+                    <iframe width="800px" height="600px" src="Helmet.html" frameborder="0" allowfullscreen mozallowfullscreen="true" 
+					webkitallowfullscreen="true" onmousewheel="" scrolling="no"> </iframe>
+ 
+                    <div class="clearfix"></div>
+ 
+                    <div style="padding:20px;">
+                        <p class="madewith"> This project was made with: </p>
+                        <div class="galleryicon">
+                            <img src="IMG/Icons/maya.png" class="icons3">
+                        </div>
+                        <div class="galleryicon">
+                            <img src="IMG/Icons/substance.png" class="icons3">
+                        </div>
+                        <div class="galleryicon">
+                            <img src="IMG/Icons/photoshop.png" class="icons3">
+                        </div>
+                        <div class="galleryicon">
+                            <img src="IMG/Icons/marmoset.png" class="icons3">
+                        </div>
+                    </div>
+ 
+                </div>
+                <div id="Knight" class="ProjectContent menu">
+                    <p class="pTitle"> Cartoonish Knight </p>
+                    <p class="pText"> While I continue to polish my animation and rigging skills, I am confident that in time, with more practice,
+						I could create more impressive projects. </p>
+                    <p class="pText"> My idea regarding this project was to build uncomplicated and easy to rig character, and then apply simple game animations on it. </p>
+                    <p style="color: #FF533D; font-family: Cambria; font-size: 1.2em;"> However, because of unexpected problems with Maya, 
+						I could not export the animations properly. Nevertheless, I am working to find the right solution for this issue. </p>
+ 
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/Knight/running.mp4">
+                            <img src="IMG/Knight/running.gif">
+                        </a>
+                        <div class="desc">Running Animation</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/Knight/standing.mp4">
+                            <img src="IMG/Knight/standing.gif">
+                        </a>
+                        <div class="desc">Standing Animation</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/Knight/fight.mp4">
+                            <img src="IMG/Knight/fight.gif">
+                        </a>
+                        <div class="desc">Fighting and Death Animation</div>
+                    </div>
+ 
+                    <div class="clearfix"></div>
+					
+					<div id="project2"></div>
+                    
+					<iframe width="800px" height="600px" src="Knight.html" frameborder="0" allowfullscreen mozallowfullscreen="true" 
+					webkitallowfullscreen="true" onmousewheel="" scrolling="no"> </iframe>
+ 
+                    <p class="madewith"> This project was made with: </p>
+                    <div class="galleryicon">
+                        <img src="IMG/Icons/maya.png" class="icons3">
+                    </div>
+                    <div class="galleryicon">
+                        <img src="IMG/Icons/zbrush.png" class="icons3">
+                    </div>
+                    <div class="galleryicon">
+                        <img src="IMG/Icons/photoshop.png" class="icons3">
+                    </div>
+                    <div class="galleryicon">
+                        <img src="IMG/Icons/substance.png" class="icons3">
+                    </div>
+                    <div class="galleryicon">
+                        <img src="IMG/Icons/marmoset.png" class="icons3">
+                    </div>
+                </div> 
+                <div id="Wing" class="ProjectContent menu">
+                    <p class="pTitle"> X-Wing Starfighter </p>
+                    <p class="pText"> George Lucas movies are a great source of inspiration for me! That is why it should not surprise you to find another 
+					Star Wars-related project in my portfolio. </p>
+                    <p class="pText"> Let me present you the iconic X-Wing Starfighter! Powerful, yet elegant, this star ship is favorite to many. 
+						The task here was to use my existing hard surface modelling skills and enhance them. Making such a complex model, 
+						rich in tiny details, was challenging to me. I consider working on this model as a very educational experience, 
+						since it helped me optimize my time management abilities and taught me how to speed up the working process. </p>
+                    <p class="pText"> Although I am satisfied with my work on the X-Wing Starfighter, I plan to modify it in near future, 
+						by adding more details and textures. </p>
+ 
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/X-Wing/wing1.png">
+                            <img src="IMG/X-Wing/wing1A.png">
+                        </a>
+                        <div class="desc">Front View</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/X-Wing/wing2.png">
+                            <img src="IMG/X-Wing/wing2A.png">
+                        </a>
+                        <div class="desc">Back View</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/X-Wing/wing3.png">
+                            <img src="IMG/X-Wing/wing3A.png">
+                        </a>
+                        <div class="desc">Top View</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/X-Wing/wing4.png">
+                            <img src="IMG/X-Wing/wing4A.png">
+                        </a>
+                        <div class="desc">Top-Front</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/X-Wing/wing5.png">
+                            <img src="IMG/X-Wing/wing5A.png">
+                        </a>
+                        <div class="desc">Lower Angle</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/X-Wing/wing6.png">
+                            <img src="IMG/X-Wing/wing6A.png">
+                        </a>
+                        <div class="desc">Back View 2</div>
+                    </div>
+ 
+                    <div class="clearfix"></div>
+					
+					<iframe width="800px" height="600px" src="X-Wing.html" frameborder="0" allowfullscreen mozallowfullscreen="true" 
+					webkitallowfullscreen="true" onmousewheel="" scrolling="no"> </iframe>
+ 
+                    <p class="madewith"> This project was made with: </p>
+                    <div class="galleryicon">
+                        <img src="IMG/Icons/maya.png" class="icons3">
+                    </div>
+                    <div class="galleryicon">
+                        <img src="IMG/Icons/zbrush.png" class="icons3">
+                    </div>
+                    <div class="galleryicon">
+                        <img src="IMG/Icons/photoshop.png" class="icons3">
+                    </div>
+                    <div class="galleryicon">
+                        <img src="IMG/Icons/substance.png" class="icons3">
+                    </div>
+                    <div class="galleryicon">
+                        <img src="IMG/Icons/marmoset.png" class="icons3">
+                    </div>
+                </div> 
+                <div id="Shield" class="ProjectContent menu">
+                    <p class="pTitle"> Shield Maiden </p>
+                    <p class="pText"> Now, this is the most complex and labor-intensive project I have completed so far. 
+						My goal was to demonstrate competency in creating an accomplished character, 
+						from the first stroke to the last touch. Before start working on the actual design, I first prepared myself by 
+						doing a historical and artistic research, related to thumbnails and overpaints, modeling and sculpting, posing, 
+						and everything necessary to produce a completed character. </p>
+                    <p class="pText"> The idea came primarily from the TV series "Vikings". The character Lagertha was a real ispiration for me.
+                        I wanted to create a female character, that is strong and fearless, but at the same time still feminine.
+						As far as aesthetics and style are concerned, I was aiming at something like "Overwatch", but still making something unique and distinguished. </p>
+                    <p class="pText"> Overall I am satisfied with the result
+                        of this challenging project, but I realize, that there is still room for improvement. Without a doubt my next
+                        characters will be better! </p>
+ 
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/Maiden/Tumbnails_1.jpg">
+                            <img src="IMG/Maiden/Tumbnails_1A.jpg">
+                        </a>
+                        <div class="desc">First Tumbnails</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/Maiden/Tumbnails_2.3.jpg">
+                            <img src="IMG/Maiden/Tumbnails_2.3A.jpg">
+                        </a>
+                        <div class="desc">Tumbnails that were close to what I was looking for</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/Maiden/Tumbnails_Fin.jpg">
+                            <img src="IMG/Maiden/Tumbnails_FinA.jpg">
+                        </a>
+                        <div class="desc">These is the last tumbnail with some instructions and things to keep in mind</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/Maiden/Final.png">
+                            <img src="IMG/Maiden/FinalA.png">
+                        </a>
+                        <div class="desc">Anatomy and stylization</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/Maiden/First.png">
+                            <img src="IMG/Maiden/FirstA.png">
+                        </a>
+                        <div class="desc">Default Pose</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/Maiden/Second.png">
+                            <img src="IMG/Maiden/SecondA.png">
+                        </a>
+                        <div class="desc">Alerted Pose</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/Maiden/Third.png">
+                            <img src="IMG/Maiden/ThirdA.png">
+                        </a>
+                        <div class="desc">Darker Light</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/Maiden/Forth.png">
+                            <img src="IMG/Maiden/ForthA.png">
+                        </a>
+                        <div class="desc">Relaxed Pose</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/Maiden/Fifth.png">
+                            <img src="IMG/Maiden/FifthA.png">
+                        </a>
+                        <div class="desc">Closeup</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/Maiden/Six.png">
+                            <img src="IMG/Maiden/SixA.png">
+                        </a>
+                        <div class="desc">Battle Pose</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="IMG/Maiden/Sevenn.png">
+                            <img src="IMG/Maiden/SevennA.png">
+                        </a>
+                        <div class="desc">Darker Light</div>
+                    </div>
+ 
+ 
+                    <div class="clearfix"></div>
+					
+					<iframe width="800px" height="600px" src="Maiden.html" frameborder="0" allowfullscreen mozallowfullscreen="true" 
+					webkitallowfullscreen="true" onmousewheel="" scrolling="no"> </iframe>
+ 
+                    <p class="madewith"> This project was made with: </p>
+                    <div class="galleryicon">
+                        <img src="IMG/Icons/photoshop.png" class="icons3">
+                    </div>
+                    <div class="galleryicon">
+                        <img src="IMG/Icons/zbrush.png" class="icons3">
+                    </div>
+                    <div class="galleryicon">
+                        <img src="IMG/Icons/maya.png" class="icons3">
+                    </div>
+                    <div class="galleryicon">
+                        <img src="IMG/Icons/marvelous.png" class="icons3">
+                    </div>
+                    <div class="galleryicon">
+                        <img src="IMG/Icons/substance.png" class="icons3">
+                    </div>
+                    <div class="galleryicon">
+                        <img src="IMG/Icons/marmoset.png" class="icons3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contacts -->
+        <a name="contacts"></a>
+        <div class="Contacts">
+            <div class="ContactInfo">
+                <p style="text-align:center; font-family: Segoe UI Black; font-size: 2.5em; color: #F5F5F5;">
+                    <i> Contacts: </i>
+                </p>
+                <p style="text-align:center; font-family: Cambria; font-size: 1.2em; color: #0F1626;">
+                    <i> If you have a project or a task you wish to discuss with me,
+						contact me via Facebook, Whatsapp, give me a call or, preferably, drop me an Email! </i>
+                </p>
+                    <img class="icons2" src="IMG/Icons/mail.png">
+                    <p class="contacts" style="color: #0F1626;"> niki.milenkov@protonmail.com </p>
+                    <img class="icons2" src="IMG/Icons/phone.png">
+                    <p class="contacts" style="color: #0F1626;"> +359 88 4942990 </p>
+                    <img class="icons2" src="IMG/Icons/facebook.png">
+                    <a href="https://www.facebook.com/nikimil" class="social" target="/blank">
+                        <p class="contacts"> Niki Milenkov </p>
+                    </a>
+                    <img class="icons2" src="IMG/Icons/artstation.png">
+                    <a href="https://www.artstation.com/nikmil" class="social" target="/blank">
+                        <p class="contacts"> Niki Milenkov </p>
+                    </a>
+            </div>
+        </div>
+        <script>
+            function openMenu(evt, menuName) {
+                var i, x, tablinks;
+                x = document.getElementsByClassName("menu");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < x.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+                }
+                document.getElementById(menuName).style.display = "block";
+                evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+            }
+            document.getElementById("myLink").click();
+        </script>
+    </body>
+		
+</html>
